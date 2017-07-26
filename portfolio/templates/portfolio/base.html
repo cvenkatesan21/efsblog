@@ -63,15 +63,15 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="/">
-                Eagle Financial Services
+                <b>Eagle Financial Services</b>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="{% url 'portfolio:home' %}">Home</a></li>
-                <li><a href="{% url 'portfolio:customer_list' %}">Customers</a></li>
-                <li><a href="{% url 'portfolio:investment_list' %}">Investments</a></li>
-                <li><a href="{% url 'portfolio:stock_list' %}">Stocks</a></li>
+                <li><a href="{% url 'portfolio:home' %}"><b>Home</b></a></li>
+                <li><a href="{% url 'portfolio:customer_list' %}"><b>Customers</b></a></li>
+                <li><a href="{% url 'portfolio:investment_list' %}"><b>Investments</b></a></li>
+                <li><a href="{% url 'portfolio:stock_list' %}"><b>Stocks</b></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
